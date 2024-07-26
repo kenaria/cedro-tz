@@ -1,0 +1,75 @@
+html,
+body{  
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    color: rgba(33, 36, 46, 1);
+    font-size: 14px;
+    line-height: 24px;
+    background: rgba(255, 255, 255, 1);  
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    color: rgba(33, 36, 46, 1);
+    font-size: 48px;
+    line-height: 56px;
+}
+.container--big,.container{
+    max-width: 1344px;
+    margin: 0 auto;
+}
+.container--big{
+    padding: 0 32px;
+}
+.container{
+    padding: 0 80px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+    overflow: hidden;
+}
+a{
+    transition: .3s linear;
+    svg path{
+        transition: .3s linear;
+    }
+    &:hover{
+        color: rgba(33, 36, 46, 1);       
+    }
+}
+.title{
+    text-transform: uppercase;
+    span{
+        color: rgba(208, 188, 122, 1);
+    }
+}
+.btn{
+    border: none;
+    background: rgba(33, 36, 46, 1);
+    padding: 16px 32px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    transition: .3s linear;
+    &:hover{
+        background: rgba(208, 188, 122, 1);
+    }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+    -webkit-transition-delay: 9999s;       
+}
+.lock{
+    position: fixed;
+    width: 100%;
+}
